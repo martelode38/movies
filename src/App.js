@@ -1,6 +1,10 @@
 
+import Banner from "./components/Banner";
+import Card from "./components/Card";
+import Container from "./components/Container";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import videos from "./json/mt.json";
 
 
 function App() {
@@ -8,10 +12,18 @@ function App() {
     <div>
         <Header/>
 
-        <h1>oi</h1>
-        <h1>Aqui ficará os filmes</h1>
-        <p>Penis!</p>
-  
+        <Banner image ="home"/>
+
+        <Container>
+        <h2>Matuê - Máquina do tempo</h2>
+          <section className="cards">
+          {
+            videos.map((e) =><Card id={e.id} key={e.id}/>)
+          }
+            </section>
+
+
+        </Container>
        
         <Footer/>
    </div>
