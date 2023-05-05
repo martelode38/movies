@@ -10,7 +10,8 @@ function Card( {id} )
                 rel="noreferrer noopener" //evitar q usem o link de forma inadequada
                 target="_blank">    
 
-                <img src={`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`} alt="capa maquina do tempo"/>
+                <img src={`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`}
+                 alt="capa maquina do tempo"/>
 
 
             </a>
