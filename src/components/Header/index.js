@@ -11,12 +11,11 @@ function Header(){
             <nav>
                      
                     <Link to ="/">Home</Link>
-                    <Link to ="/Watch">Assistir</Link>
-
+                    <Link to  ="/Search">Pesquisar</Link>
             </nav>
         </header>
 
-    )
+    ) 
 }
 
 export default Header;
