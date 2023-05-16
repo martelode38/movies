@@ -1,5 +1,5 @@
 .header{
-    background-color: #00000099;
+    background-color: #000000b7;
     border-bottom: 1px solid #f44336;
     position: fixed;
     top: 0;
@@ -8,7 +8,7 @@
     padding: 1.1rem;
     align-items: center;
     justify-content: space-between; /*a logo vai pro lado esquerdo e os links para o lado direito*/ 
-    
+    z-index: 2;
 }
 
 .header span{

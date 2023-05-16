@@ -4,11 +4,14 @@ import { useState } from "react";
 
 
 
-function filterVideos(videos, searchText){
+const filterVideos = (videos, searchText)=>{
+    
     return videos.filter((video)=> video.category.includes(searchText) || video.title.includes(searchText))
     }
 
-function SearchVideoList({ videos }){
+
+
+const SearchVideoList=({ videos })=>{
     const [searchText, setSearchText] = useState()
     
     const foundVideos = filterVideos(videos, searchText)

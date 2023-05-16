@@ -1,7 +1,7 @@
 import styles from "./Category.module.css";
 import videos from "../../json/mt.json";
 
- export const categories = ["Matue", "Derek", "Ryu"]
+ export const categories = ["matue", "derek", "ryu"]
 
  export function filterCategory(id)
  {
@@ -9,7 +9,7 @@ import videos from "../../json/mt.json";
  }
 
 
-function Category({category, children}){
+const Category = ({category, children}) => {
     return(
 
     <section className={styles.Category}>
