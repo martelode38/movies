@@ -3,19 +3,23 @@ import Home from "./pages/Home";
 import Watch from "./pages/Watch";
 import PageNotFound from "./pages/PageNotFound";
 import Search from "./pages/Search";
+import Favorites from "./pages/Favorites";
+import FavoritesProvider from "./contexts/favorites";
 
 function AppRoutes()
 {
     return(
         <BrowserRouter>
-        
-            <Routes>
-                <Route path="/" element={<Home/>}></Route>
-                <Route path="/Watch/:id" element={<Watch/>}></Route>
-                <Route path="*" element={<PageNotFound/>}></Route>
-                <Route path="/search" element={<Search/>}></Route>
-            </Routes>
-        
+        <FavoritesProvider>
+                <Routes>
+                    <Route path="/" element={<Home/>}></Route>
+                    <Route path="/Watch/:id" element={<Watch/>}></Route>
+                    <Route path="*" element={<PageNotFound/>}></Route>
+                    <Route path="/search" element={<Search/>}></Route>
+                    <Route path="/favorites" element={<Favorites/>}></Route>
+            
+                </Routes>
+        </FavoritesProvider>
         
         
         </BrowserRouter>
