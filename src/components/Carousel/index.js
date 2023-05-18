@@ -1,5 +1,5 @@
 import Slider from "react-slick/lib/slider";
-import styles from"./carousel.css";
+import "./carousel.css";
 
 const Carousel = ({children}) => {
    
@@ -39,7 +39,7 @@ const Carousel = ({children}) => {
    }
    
     return(
-        <div className={styles.Carousel}>
+        <div>
             <Slider {...settings}>
                 {children}
             </Slider>
